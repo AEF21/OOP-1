@@ -1,0 +1,27 @@
+```mermaid
+classDiagram
+    class Customer {
+        -id:int
+        -name:String
+        -email:String
+        -phone:int
+    }
+
+    class Product {
+        +id:int
+        +name:String
+        +price:double
+        +category:String
+    }
+
+    class Order {
+        -id:int
+        -totalPrice:double
+    }
+
+    %% An order belongs to exactly one customer
+    Order --> "1" Customer : belongsTo
+    %% An order contains one or more products
+    Order --> "1..*" Product : contains
+
+```
