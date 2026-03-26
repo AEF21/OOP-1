@@ -1,4 +1,6 @@
-package se.lexicon;
+package se.lexicon.OnlineShop;
+
+import java.util.Arrays;
 
 public class Shop {
     public static void main(String[] args) {
@@ -28,11 +30,8 @@ public class Shop {
         order.addProduct(pencil);
 
         System.out.println("\n--- Order for Ali ---");
-        System.out.println("Customer: " + order.getCustomer().getName());
+        Arrays.asList("Customer: " + order.getCustomer().getName(), "Products in order: " + order.getProducts(), "Total price: " + order.getTotalPrice()).forEach(System.out::println);
 
-
-        System.out.println("Products in order: " + order.getProducts());
-        System.out.println("Total price: " + order.getTotalPrice());
 
         // Order for Ella
         Order order1 = new Order(101, ella);
@@ -41,8 +40,8 @@ public class Shop {
         order1.addProduct(backpack);
 
         System.out.println("\n--- Order for Ella ---");
-        System.out.println("Customer: " + order1.getCustomer().getName);
-        System.out.println("Products in order: " + order1.getProducts());
-        System.out.println("Total price: " + order1.getTotalPrice());
+        for (String s : Arrays.asList("Customer: " + order1.getCustomer().getName, "Products in order: " + order1.getProducts(), "Total price: " + order1.getTotalPrice())) {
+            System.out.println(s);
+        }
     }
 }

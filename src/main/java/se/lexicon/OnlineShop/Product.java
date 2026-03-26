@@ -1,4 +1,4 @@
-package se.lexicon;
+package se.lexicon.OnlineShop;
 
 public class Product {
     private int id;
@@ -20,7 +20,6 @@ public class Product {
     }
 
     public void setID(int ID) {
-        this.id = id;
     }
 
     public String getCategory() {
@@ -28,7 +27,8 @@ public class Product {
     }
 
     public void setCategory(String category) {
-        category = category;
+        this.category = category;
+
     }
 
     public double getPrice() {
@@ -36,7 +36,6 @@ public class Product {
     }
 
     public void setPrice(double price) {
-        price = price;
     }
 
     public String getName() {
@@ -44,7 +43,8 @@ public class Product {
     }
 
     public void setName(String name) {
-        name = name;
+        this.name = name;
+
     }
     @Override
     public String toString() {

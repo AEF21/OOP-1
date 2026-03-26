@@ -1,4 +1,4 @@
-package se.lexicon;
+package se.lexicon.OnlineShop;
 
 import java.util.ArrayList;
 import java.util.List;

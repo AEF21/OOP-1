@@ -1,4 +1,4 @@
-package se.lexicon;
+package se.lexicon.OnlineShop;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,9 +7,9 @@ import java.util.List;
 public class Customer {
     private final int id;
     private String name;
-    private String email;
+    private final String email;
     private Long phone;
-    private List<Order> orders;
+    private final List<Order> orders;
 
 
     public Customer(int id, String name, String email) {
@@ -29,7 +29,7 @@ public class Customer {
     }
 
     public void setOrders(List<Order> orders) {
-        orders = orders;
+
     }
 
     public Long getPhone() {
@@ -37,7 +37,6 @@ public class Customer {
     }
 
     public void setPhone(Long phone) {
-        phone = phone;
     }
 
     public String getName() {
@@ -50,6 +49,10 @@ public class Customer {
 
     public String getEmail() {
         return email;
+    }
+
+    public void setEmail() {
+        setEmail(null);
     }
 
     public void setEmail(String email) {

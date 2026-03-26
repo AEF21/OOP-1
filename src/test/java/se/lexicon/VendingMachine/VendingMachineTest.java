@@ -1,4 +1,4 @@
 package se.lexicon.VendingMachine;
 
-public class Snacks {
+public class VendingMachineTest {
 }
