@@ -2,14 +2,14 @@ package se.lexicon.OnlineShop;
 
 import java.util.Arrays;
 
-public class Shop {
+public class Shop   {
     public static void main(String[] args) {
 
         // Capitalize names
-        String nameAli = "ali";
+        String nameAli = "Ali";
         String capitalizedAli = nameAli.substring(0,1).toUpperCase() + nameAli.substring(1);
 
-        String nameElla = "ella";
+        String nameElla = "Ella";
         String capitalizedElla = nameElla.substring(0,1).toUpperCase() + nameElla.substring(1);
 
         // Create customers using capitalized names
@@ -30,7 +30,7 @@ public class Shop {
         order.addProduct(pencil);
 
         System.out.println("\n--- Order for Ali ---");
-        Arrays.asList("Customer: " + order.getCustomer().getName(), "Products in order: " + order.getProducts(), "Total price: " + order.getTotalPrice()).forEach(System.out::println);
+        Arrays.asList(new String[]{"Customer: " + order, "Products in order: " + order.getProducts(), "Total price: " + order.getTotalPrice()}).forEach(System.out::println);
 
 
         // Order for Ella
@@ -40,7 +40,7 @@ public class Shop {
         order1.addProduct(backpack);
 
         System.out.println("\n--- Order for Ella ---");
-        for (String s : Arrays.asList("Customer: " + order1.getCustomer().getName, "Products in order: " + order1.getProducts(), "Total price: " + order1.getTotalPrice())) {
+        for (String s : Arrays.asList("Customer: " + order1, "Products in order: " + order1.getProducts(), "Total price: " + order1.getTotalPrice())) {
             System.out.println(s);
         }
     }

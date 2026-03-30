@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Order {
     private int id;
-    private String customer;
+    private final String customer;
     List <Product>Products =new ArrayList<>();
 
     public Order(int id, Customer Customer) {

@@ -3,7 +3,7 @@ package se.lexicon.VendingMachine;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class VendingMachineImpl implements IVendingMachine {
+public class VendingMachineImpl implements IVendingMachine {
 
     private int balance = 0;
     private final List<Product> products = new ArrayList<>();
@@ -113,5 +113,10 @@ public abstract class VendingMachineImpl implements IVendingMachine {
     @Override
     public List<Product> getProducts() {
         return products;
+    }
+
+    @Override
+    public boolean buy(int productId) {
+        return false;
     }
 }

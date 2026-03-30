@@ -34,7 +34,8 @@ public class ConsoleUI {
                 case "3":
                     System.out.print("Enter product ID to purchase: ");
                     int productId = Integer.parseInt(scanner.nextLine());
-                    System.out.println(vendingMachine.buy(productId));
+                    System.out.println(vendingMachine.purchaseProduct(productId));
+
                     break;
 
                 case "4":

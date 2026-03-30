@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Customer {
     private final int id;
-    private String name;
+    public String name;
     private final String email;
     private Long phone;
     private final List<Order> orders;
